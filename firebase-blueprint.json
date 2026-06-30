@@ -1,0 +1,58 @@
+{
+  "collections": [
+    {
+      "name": "expenses",
+      "description": "Stores user expenses",
+      "fields": [
+        {
+          "name": "userId",
+          "type": "string",
+          "description": "Firebase Auth UID of the user who owns this expense",
+          "validation": "required"
+        },
+        {
+          "name": "amount",
+          "type": "number",
+          "description": "Expense amount",
+          "validation": "required, minimum 0"
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "Category of expense",
+          "validation": "required"
+        },
+        {
+          "name": "date",
+          "type": "string",
+          "description": "Date of expense",
+          "validation": "required"
+        },
+        {
+          "name": "note",
+          "type": "string",
+          "description": "Expense note or description",
+          "validation": "optional"
+        },
+        {
+          "name": "createdAt",
+          "type": "timestamp",
+          "description": "When the expense was created",
+          "validation": "required"
+        }
+      ]
+    },
+    {
+      "name": "users",
+      "description": "Stores user profile and settings",
+      "fields": [
+        {
+          "name": "budgetLimit",
+          "type": "number",
+          "description": "Monthly budget limit",
+          "validation": "optional"
+        }
+      ]
+    }
+  ]
+}

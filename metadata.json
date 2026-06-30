@@ -1,0 +1,6 @@
+{
+  "name": "Quản lý Chi tiêu Cá nhân",
+  "description": "Ứng dụng theo dõi chi tiêu cá nhân đơn giản, hỗ trợ thêm, sửa, xóa và xem thống kê chi tiêu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
